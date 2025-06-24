@@ -1,0 +1,260 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 4px 1px 10px  #252F42;
+    border: 2px solid rgb(66, 66, 66);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-image: url('/images/world-map.png');
+    background-size:cover;
+    background-position: center;
+    padding: 60px 0;
+}
+
+ header > img {
+    width: 94px;
+    height: 84px;
+}
+
+h1 {
+    color: #32CD32;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 5px;
+    padding-bottom: 60px;
+}
+
+.translate-header {
+    margin-bottom: 5px;
+}
+
+.lang-header {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #035A9D;
+    text-align: center;
+}
+
+.common-box {
+    width: 330px;
+    background-color: #EFF0F4;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0 0 10px;
+    min-height: 90px;
+    font-family: 'Open Sans', monospace;
+}
+
+#userInput {
+    height: 160px;
+    resize: none;
+    max-width: 320px;
+}
+
+#translatedTextBox {
+    display: flex;
+    height: auto;
+    width: 320px;
+    align-items: center;
+}
+
+#translatedText {
+    font-family: 'Open Sans', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+#translated-header {
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+fieldset > legend {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: fit-content;
+}
+
+.radio-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-card input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    min-width: 120px;
+    width: 190px;
+}
+
+.radio-card:hover .radio-label {
+    border-color: #d1d5db;
+    background-color: #f9fafb;
+}
+
+.radio-card input:checked + .radio-label {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.selection-indicator {
+    display: none;
+}
+
+.radio-card input:checked + .radio-label .selection-indicator {
+    opacity: 1;
+}
+
+button {
+    padding: 16px 80px;
+    background-color: #035A9D;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+
+#translate-again-button  {
+    display: none;
+}
+
+#restart-button {
+    color: black;
+    background-color: grey;
+    display: none;
+    margin-top: 40px;
+    display: none;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 12px 40px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.translation {
+    display: none;
+    flex-direction: column;
+}
+
+#audio-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+#play, #stop {
+    flex: 1;
+    padding:20px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:rgb(66, 66, 66);
+    color: white;
+    font-family: 'Open Sans', monospace;
+    margin-bottom: 50px;
+}
+
+#play {
+    background-color: #039d93;
+}
+#stop {
+    background-color:#b3492e;
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: -10px;
+    display: none;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
