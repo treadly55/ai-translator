@@ -1,6 +1,6 @@
 # 🦜 PollyGlot Translator
 
-**PollyGlot Translator** is a proof-of-concept web application that provides quick and accurate translations across multiple language via OpenAI’s GPT mode.
+**PollyGlot Translator** is a proof-of-concept web application that utilises OpenAI’s API to provide quick and accurate translations across three common languages.
 
 The app is designed to be mobile-friendly and functions as a simple, streamlined language assistant.
 
@@ -15,13 +15,9 @@ https://ai-translator-app.netlify.app/
 - **APIs Used:** [OpenAI API](https://platform.openai.com/) – for generating translations
 - **Hosting:** Netlify
 
----
-
 ## Getting Started
 
 Follow these instructions to get a local copy of the project up and running for development and testing.
-
----
 
 ## Installation
 
@@ -48,6 +44,6 @@ npm install
 
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
