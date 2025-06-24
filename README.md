@@ -4,15 +4,15 @@
 
 The app is designed to be mobile-friendly and functions as a simple, streamlined language assistant.
 
----
+## Working Example 
+https://ai-translator-app.netlify.app/
 
 ## 🛠 Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Build Tool:** Vite
 - **Backend:** Netlify Functions (Node.js)
-- **APIs Used:**
-  - [OpenAI API](https://platform.openai.com/) – for generating translations
+- **APIs Used:** [OpenAI API](https://platform.openai.com/) – for generating translations
 - **Hosting:** Netlify
 
 ---
@@ -48,3 +48,6 @@ npm install
 
 ```
 
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
